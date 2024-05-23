@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Button, Greeting, and Calculator</title>
+    <title>Basic Calculator</title>
     <link rel="stylesheet" href="stylesi.css">
 </head>
 <body>
-    <button id="colorButton" class="myButton1">click button to change color</button>
+    <button id="colorButton" class="myButton">Click me to change color</button>
     <button onclick="displayGreeting()">Display Greeting</button>
-    <div>
-        <input type="number" id="num1" placeholder="Enter first number">
-        <input type="number" id="num2" placeholder="Enter second number">
-        <button onclick="SubtractNumbers()">Subtract</button>
-        <button onclick="AddNumbers()">Add</button>
-        <button onclick="MultiplyNumbers()">Multiply</button>
-        <button onclick="DivideNumbers()">Divide</button>
 
-        <p id="result"></p>
-    </div>
+<div class="calculator">
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="addNumbers()">Add</button>
+    <div id="result" class="result"></div>
+</div>
 
-    <script src="scriptsi.js"></script>
+<script src="scriptsi.js"></script>
+
 </body>
 </html>
